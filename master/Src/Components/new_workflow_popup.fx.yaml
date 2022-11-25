@@ -211,7 +211,7 @@ new_workflow_popup As CanvasComponent:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Size: =style.fonts.size.s
-            Text: ="Cancel"
+            Text: ="Cancel65456"
             Width: =181
             X: =20
             Y: =14
