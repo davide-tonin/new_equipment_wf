@@ -1,0 +1,72 @@
+tag_button As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =22
+    ImageVisibility: =true
+    OnClick: =true
+    OnRemove: =true
+    OutputID: =tag_button.TagID
+    RightAnchor: =If(Self.Visible,Self.Width+Self.X+5,Self.Width+Self.X)
+    Selected: =true
+    Tag: ="Text"
+    TagID: =100
+    TagValue: =Upper(Text(tag_button.Tag))
+    Width: =90
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    TextInput3_6 As text:
+        Align: =Align.Center
+        BorderColor: |-
+            =If(
+                Self.DisplayMode = DisplayMode.Edit,
+                style.colors.neutral._400,
+                style.colors.neutral._000
+            )
+        BorderThickness: =0
+        Color: =RGBA(255, 255, 255, 1)
+        Default: =Upper(tag_button.Tag)
+        DisabledBorderColor: =style.colors.primary._200
+        DisabledColor: =If(tag_button.Selected, style.colors.neutral._000, style.colors.neutral._900)
+        DisabledFill: =If(tag_button.Selected, style.colors.primary._300, style.colors.blue_gray)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =1
+        Font: =style.fonts.family.primary
+        Height: =Parent.Height-2
+        HoverBorderColor: =style.colors.neutral._600
+        HoverColor: =style.colors.neutral._999
+        HoverFill: =style.colors.neutral._000
+        MaxLength: =500
+        PaddingLeft: =10
+        PaddingRight: |
+            =10
+        PaddingTop: =4
+        PressedBorderColor: =style.colors.neutral._800
+        Size: =style.fonts.size.xs
+        Width: =Parent.Width
+        Y: =1
+        ZIndex: =1
+
+    Button2_7 As button:
+        BorderColor: =Self.Fill
+        Fill: =Transparent
+        FocusedBorderColor: =Self.Fill
+        FocusedBorderThickness: =2
+        Font: =style.fonts.family.primary
+        Height: =22
+        HoverBorderColor: =Self.Fill
+        HoverColor: =Self.Color
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |
+            =tag_button.OnClick()
+        PressedColor: =Self.Color
+        PressedFill: =Self.Fill
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =style.fonts.size.xs
+        Text: =""
+        Width: =90
+        ZIndex: =2
+

@@ -1,0 +1,42 @@
+primary_button As CanvasComponent:
+    Caption: ="Click me"
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =36
+    OnSelect: =true
+    Width: =120
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    html_background_button As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div style='margin: 7px; background: linear-gradient(198.39deg, #127B69 13.46%, #07473D 63.42%); border-radius:" & Parent.Height / 2 & "px; height: " & Self.Height &"px;box-shadow:0 3px 4px 2px #E0E4E6;'>&nbsp;</div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =1
+        Width: =Parent.Width
+        ZIndex: =1
+
+    btn_select_button As button:
+        BorderThickness: =0
+        Color: =style.colors.neutral._200
+        DisabledFill: =RGBA(255, 255, 255, 0.1)
+        Fill: =Transparent
+        FocusedBorderThickness: =0
+        Height: =Parent.Height
+        HoverColor: =style.colors.neutral._000
+        HoverFill: =RGBA(255, 255, 255, 0.07)
+        OnSelect: =primary_button.OnSelect()
+        PressedColor: =Self.Color
+        PressedFill: =RGBA(255, 255, 255, 0.08)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =10
+        Text: =Parent.Caption
+        Width: =Parent.Width
+        ZIndex: =3
+

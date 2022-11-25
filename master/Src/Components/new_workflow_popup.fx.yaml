@@ -1,0 +1,247 @@
+new_workflow_popup As CanvasComponent:
+    Caption: ="Click me"
+    DescriptionOutputValue: =TextInput3_4.Text
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =768
+    NameOutputValue: =TextInput3_5.Text
+    OnConfirm: =true
+    OnExit: =true
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0.3)
+        Height: =768
+        OnSelect: |-
+            =Reset(TextInput3_4);
+            Reset(TextInput3_5);
+            new_workflow_popup.OnExit()
+        Width: =1366
+        ZIndex: =2
+
+    TextInput3_3 As text:
+        BorderColor: |-
+            =If(
+                Self.DisplayMode = DisplayMode.Edit,
+                style.colors.neutral._400,
+                style.colors.neutral._000
+            )
+        BorderThickness: =0
+        Default: =""
+        DisabledBorderColor: =style.colors.primary._200
+        DisabledColor: =style.colors.neutral._700
+        DisabledFill: =style.colors.primary._300
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =1
+        Font: =style.fonts.family.primary
+        Height: =290
+        HoverBorderColor: =style.colors.neutral._600
+        HoverColor: =style.colors.neutral._999
+        HoverFill: =style.colors.neutral._000
+        MaxLength: =500
+        Mode: =TextMode.MultiLine
+        PressedBorderColor: =style.colors.neutral._800
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =style.fonts.size.m 
+        Width: =407
+        X: =479
+        Y: =215
+        ZIndex: =3
+
+    HtmlText1 As htmlViewer:
+        Height: =290
+        HtmlText: |-
+            ="<div style='background: #22DFBE ;border-radius:10px;
+            background: linear-gradient(-90deg, #22DFBE 0%, rgba(0,0,0,0) 100%); width:100%;height:" & Self.Height-100 &"px;'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =407
+        X: =479
+        Y: =215
+        ZIndex: =4
+
+    Button2_3 As button:
+        BorderColor: =Self.Fill
+        BorderThickness: =0
+        DisabledFill: =style.colors.neutral._000
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =style.colors.neutral._200
+        FocusedBorderColor: =Self.Fill
+        FocusedBorderThickness: =2
+        Font: =style.fonts.family.primary
+        Height: =278
+        HoverBorderColor: =Self.Fill
+        HoverColor: =Self.Color
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =
+        PaddingBottom: =6
+        PressedColor: =Self.Color
+        PressedFill: =Self.Fill
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =style.fonts.size.s
+        Text: =""
+        Width: =407
+        X: =479
+        Y: =227
+        ZIndex: =5
+
+    TextInput3_4 As text:
+        BorderColor: |-
+            =If(
+                Self.DisplayMode = DisplayMode.Edit,
+                ColorFade(style.colors.m_u, -10%),
+                style.colors.neutral._000
+            )
+        BorderThickness: =1
+        Default: =""
+        DisabledBorderColor: =style.colors.neutral._700
+        DisabledColor: =style.colors.neutral._700
+        Fill: =style.colors.m_u
+        FocusedBorderThickness: =1
+        Font: =style.fonts.family.primary
+        Height: =84
+        HintText: ="Type its description.."
+        HoverBorderColor: =ColorFade(style.colors.m_u, -30%)
+        HoverColor: =style.colors.neutral._999
+        HoverFill: =ColorFade(style.colors.m_u, 20%)
+        LineHeight: =1.3
+        MaxLength: =500
+        Mode: =TextMode.MultiLine
+        PaddingRight: =12
+        PressedBorderColor: =style.colors.neutral._800
+        Size: =style.fonts.size.m - 1
+        Width: =375
+        X: =495
+        Y: =352
+        ZIndex: =7
+
+    Label2_13 As label:
+        Color: =style.colors.neutral._900
+        Font: =style.fonts.family.primary
+        FontWeight: =FontWeight.Bold
+        Size: =style.fonts.size.xxl
+        Text: ="New workflow "
+        Width: =254
+        X: =495
+        Y: =234
+        ZIndex: =8
+
+    Container4_2 As groupContainer.manualLayoutContainer:
+        Height: =59
+        Width: =407
+        X: =479
+        Y: =446
+        ZIndex: =9
+
+        TextInput4_2 As text:
+            BorderThickness: =0
+            Default: =""
+            DisabledFill: =style.colors.neutral._000
+            DisplayMode: =DisplayMode.Disabled
+            Height: =59
+            Width: =407
+            ZIndex: =1
+
+        Rectangle1_4 As rectangle:
+            Fill: =style.colors.neutral._300
+            Height: =1
+            Width: =Parent.Width - (2*Self.X)
+            X: =20
+            Y: =5
+            ZIndex: =2
+
+        Button2_5 As button:
+            BorderColor: =Self.Fill
+            DisplayMode: =If(IsBlank(TextInput3_5.Text) And IsBlank(TextInput3_4),DisplayMode.Disabled, DisplayMode.Edit)
+            Fill: =style.colors.primary._400
+            FocusedBorderColor: =Self.Fill
+            FocusedBorderThickness: =2
+            Font: =style.fonts.family.primary
+            Height: =30
+            HoverBorderColor: =Self.Fill
+            HoverColor: =Self.Color
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: |-
+                =new_workflow_popup.OnConfirm();
+                Reset(TextInput3_4);
+                Reset(TextInput3_5)
+            PaddingBottom: =6
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =style.fonts.size.s
+            Text: =new_workflow_popup.Caption
+            Width: =181
+            X: =206
+            Y: =14
+            ZIndex: =3
+
+        Button2_6 As button:
+            BorderColor: =style.colors.primary._400
+            Color: =style.colors.neutral._900
+            Fill: =style.colors.neutral._200
+            FocusedBorderColor: =style.colors.primary._400
+            FocusedBorderThickness: =2
+            Font: =style.fonts.family.primary
+            Height: =30
+            HoverBorderColor: =style.colors.primary._400
+            HoverColor: =Self.Color
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: |-
+                =Reset(TextInput3_4);
+                Reset(TextInput3_5);
+                new_workflow_popup.OnExit()
+            PaddingBottom: =6
+            PressedBorderColor: =style.colors.primary._400
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =style.fonts.size.s
+            Text: ="Cancel"
+            Width: =181
+            X: =20
+            Y: =14
+            ZIndex: =4
+
+    TextInput3_5 As text:
+        BorderColor: |-
+            =If(
+                Self.DisplayMode = DisplayMode.Edit,
+                ColorFade(style.colors.m_u, -10%),
+                style.colors.neutral._000
+            )
+        BorderThickness: =1
+        Default: =""
+        DisabledBorderColor: =style.colors.neutral._700
+        DisabledColor: =style.colors.neutral._700
+        Fill: =style.colors.m_u
+        FocusedBorderThickness: =1
+        Font: =style.fonts.family.primary
+        HintText: ="Type the workflow's name.."
+        HoverBorderColor: =ColorFade(style.colors.m_u, -30%)
+        HoverColor: =style.colors.neutral._999
+        HoverFill: =ColorFade(style.colors.m_u, 20%)
+        LineHeight: =1.3
+        MaxLength: =500
+        PaddingRight: =12
+        PressedBorderColor: =style.colors.neutral._800
+        Size: =style.fonts.size.m - 1
+        Width: =375
+        X: =495
+        Y: =293
+        ZIndex: =10
+

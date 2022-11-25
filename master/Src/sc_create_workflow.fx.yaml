@@ -1,0 +1,107 @@
+sc_create_workflow As screen:
+    Fill: =ColorFade(style.colors.m_u, 10%)
+
+    left_sidebar_7 As left_sidebar:
+        ZIndex: =2
+
+    Label2_10 As label:
+        Color: =style.colors.neutral._900
+        Font: =style.fonts.family.primary
+        FontWeight: =FontWeight.Bold
+        Size: =style.fonts.size.xxl
+        Text: ="New workflow "
+        Width: =254
+        X: =585
+        Y: =29
+        ZIndex: =3
+
+    Container4_1 As groupContainer.manualLayoutContainer:
+        Height: =59
+        Width: =480
+        X: =585
+        Y: =676
+        ZIndex: =4
+
+        TextInput4_1 As text:
+            BorderThickness: =0
+            Default: =""
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Height: =59
+            Width: =480
+            ZIndex: =1
+
+        Rectangle1_3 As rectangle:
+            Fill: =style.colors.neutral._300
+            Height: =1
+            Width: =Parent.Width - (2*Self.X)
+            X: =20
+            Y: =5
+            ZIndex: =2
+
+    Container5_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =580
+        Width: =480
+        X: =585
+        Y: =96
+        ZIndex: =5
+
+        ComboBox1_1 As combobox:
+            BorderColor: =ColorFade(style.colors.m_u, -10%)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =style.colors.primary._400
+            ChevronHoverBackground: =Transparent
+            ChevronHoverFill: =style.colors.primary._300
+            DisplayFields: =["DisplayName"]
+            Fill: =style.colors.m_u
+            FocusedBorderThickness: =1
+            Height: =32
+            HoverFill: =ColorFade(style.colors.m_u, -10%)
+            InputTextPlaceholder: ="Search user to add..."
+            Items: =Choices(TBL_OWNERS[@MS_USER])
+            NoSelectionText: ="Search user to add..."
+            PressedColor: =Transparent
+            PressedFill: =Transparent
+            SearchFields: =["DisplayName"]
+            SearchItems: =Choices(TBL_OWNERS.MS_USER,ComboBox1_1.SearchText)
+            SelectionColor: =Black
+            SelectionFill: =ColorFade(style.colors.m_u, -5%)
+            SelectMultiple: =false
+            Size: =style.fonts.size.s
+            Width: =432
+            X: =20
+            Y: =65
+            ZIndex: =1
+
+        TextInput3_2 As text:
+            BorderColor: |-
+                =If(
+                    Self.DisplayMode = DisplayMode.Edit,
+                    ColorFade(style.colors.m_u, -10%),
+                    style.colors.neutral._000
+                )
+            BorderThickness: =1
+            Default: =""
+            DisabledBorderColor: =style.colors.neutral._700
+            DisabledColor: =style.colors.neutral._700
+            Fill: =style.colors.m_u
+            FocusedBorderThickness: =1
+            Font: =style.fonts.family.primary
+            Height: =84
+            HintText: ="Type a comment or save a file..."
+            HoverBorderColor: =ColorFade(style.colors.m_u, -30%)
+            HoverColor: =style.colors.neutral._999
+            HoverFill: =ColorFade(style.colors.m_u, 20%)
+            LineHeight: =1.3
+            MaxLength: =500
+            Mode: =TextMode.MultiLine
+            PaddingRight: =12
+            PressedBorderColor: =style.colors.neutral._800
+            Size: =style.fonts.size.m - 1
+            Width: =432
+            X: =20
+            Y: =143
+            ZIndex: =2
+

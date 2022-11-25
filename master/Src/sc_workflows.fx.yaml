@@ -1,0 +1,228 @@
+sc_workflows As screen:
+    Fill: =ColorFade(style.colors.m_u, 0%)
+
+    Image5 As image:
+        Height: =670
+        Image: ='Shadow 1'
+        Width: =980
+        X: =350
+        Y: =82
+        ZIndex: =1
+
+    TextInput2_1 As text:
+        Default: =""
+        DisabledBorderColor: =Transparent
+        DisabledFill: =style.colors.neutral._200
+        DisplayMode: =DisplayMode.Disabled
+        Height: =606
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Width: =960
+        X: =360
+        Y: =113
+        ZIndex: =2
+
+    left_sidebar_2 As left_sidebar:
+        ZIndex: =3
+
+    TextInput2 As text:
+        BorderThickness: =0
+        Default: =""
+        DisabledBorderColor: =Transparent
+        DisabledFill: =style.colors.neutral._999
+        DisplayMode: =DisplayMode.Disabled
+        Height: =30
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =960
+        X: =360
+        Y: =97
+        ZIndex: =4
+
+    Label2 As label:
+        Color: =style.colors.neutral._900
+        Font: =style.fonts.family.primary
+        FontWeight: =FontWeight.Bold
+        Size: =style.fonts.size.xxl
+        Text: ="All workflows"
+        Width: =800
+        X: =360
+        Y: =29
+        ZIndex: =5
+
+    Label2_1 As label:
+        Color: =style.colors.neutral._300
+        Font: =style.fonts.family.primary
+        Height: =27
+        Size: =style.fonts.size.s
+        Text: ="Project name"
+        Width: =309
+        X: =416
+        Y: =97
+        ZIndex: =6
+
+    Label2_2 As label:
+        Color: =style.colors.neutral._300
+        Font: =style.fonts.family.primary
+        Height: =27
+        Size: =style.fonts.size.s
+        Text: ="ID"
+        Width: =50
+        X: =366
+        Y: =97
+        ZIndex: =7
+
+    Label2_3 As label:
+        Color: =style.colors.neutral._300
+        Font: =style.fonts.family.primary
+        Height: =27
+        Size: =style.fonts.size.s
+        Text: ="Current step"
+        Width: =137
+        X: =725
+        Y: =97
+        ZIndex: =8
+
+    Label2_4 As label:
+        Color: =style.colors.neutral._300
+        Font: =style.fonts.family.primary
+        Height: =27
+        Size: =style.fonts.size.s
+        Text: ="Description"
+        Width: =412
+        X: =862
+        Y: =97
+        ZIndex: =9
+
+    Gallery2 As gallery.galleryVertical:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =606
+        Items: =TBL_WORKFLOWS
+        Layout: =Layout.Vertical
+        OnSelect: |-
+            =Set(this_workflow, ThisItem);
+            Navigate(sc_see_workflow)
+        TemplatePadding: =0
+        TemplateSize: =50
+        Width: =960
+        X: =360
+        Y: =125
+        ZIndex: =10
+
+        Label2_5 As label:
+            Color: =style.colors.neutral._900
+            Font: =style.fonts.family.primary
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =style.fonts.size.s
+            Text: =ThisItem.ID
+            Width: =50
+            X: =4
+            ZIndex: =1
+
+        Label2_6 As label:
+            Color: =style.colors.neutral._900
+            Font: =style.fonts.family.primary
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =style.fonts.size.s
+            Text: =ThisItem.NAME
+            Width: =315
+            X: =54
+            ZIndex: =2
+
+        Label2_7 As label:
+            Color: =style.colors.neutral._900
+            Font: =style.fonts.family.primary
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =style.fonts.size.s
+            Text: =ThisItem.STEP_CODE
+            Width: =137
+            X: =365
+            ZIndex: =3
+
+        Label2_8 As label:
+            Color: =style.colors.neutral._900
+            Font: =style.fonts.family.primary
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =style.fonts.size.s
+            Text: =Substitute(ThisItem.DESCRIPTION, Char(10), " ")
+            Width: =425
+            Wrap: =false
+            X: =502
+            ZIndex: =4
+
+        Icon2 As icon.ChevronRight:
+            Color: =style.colors.neutral._900
+            Height: =20
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            Width: =33
+            X: =927
+            Y: =15
+            ZIndex: =5
+
+    Button2 As button:
+        BorderColor: =Self.Fill
+        BorderThickness: =0
+        Fill: =style.colors.primary._400
+        FocusedBorderColor: =Self.Fill
+        FocusedBorderThickness: =0
+        Font: =style.fonts.family.primary
+        Height: =34
+        HoverBorderColor: =Self.Fill
+        HoverColor: =Self.Color
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =Set(workflow_to_edit, Defaults(TBL_WORKFLOWS));
+            UpdateContext({show_workflow_popup: true});
+        PressedColor: =Self.Color
+        PressedFill: =Self.Fill
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =style.fonts.size.s
+        Text: ="New"
+        Width: =100
+        X: =1220
+        Y: =39
+        ZIndex: =11
+
+    Label2_122 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =style.colors.neutral._999
+        Font: =style.fonts.family.primary
+        Height: =32
+        Size: =style.fonts.size.s
+        Text: =CountRows(Gallery2.AllItems) & " results"
+        Width: =359
+        X: =961
+        Y: =731
+        ZIndex: =12
+
+    new_workflow_popup_1 As new_workflow_popup:
+        OnConfirm: |
+            =UpdateContext({show_workflow_popup: false});
+            Patch(
+                TBL_WORKFLOWS, 
+                Defaults(TBL_WORKFLOWS), 
+                {
+                    DESCRIPTION: new_workflow_popup_1.DescriptionOutputValue,
+                    NAME: new_workflow_popup_1.NameOutputValue,
+                    STEP_CODE: 1
+                }
+            );
+        OnExit: |-
+            =UpdateContext({show_workflow_popup: false});
+        Visible: =show_workflow_popup
+        ZIndex: =15
+

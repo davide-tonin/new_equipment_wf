@@ -1,0 +1,604 @@
+sc_see_workflow As screen:
+    Fill: =ColorFade(style.colors.m_u, 10%)
+
+    Image17 As image:
+        Height: =666
+        Image: ='Shadow 2'
+        Width: =1000
+        X: =340
+        Y: =84
+        ZIndex: =1
+
+    left_sidebar_6 As left_sidebar:
+        ZIndex: =2
+
+    Label2_9 As label:
+        Color: =style.colors.neutral._900
+        Font: =style.fonts.family.primary
+        FontWeight: =FontWeight.Bold
+        Size: =style.fonts.size.xxl
+        Text: ="Workflow " & this_workflow.ID
+        Width: =800
+        X: =360
+        Y: =29
+        ZIndex: =3
+
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =44
+        Width: =960
+        X: =360
+        Y: =93
+        ZIndex: =4
+
+        TextInput4 As text:
+            BorderThickness: =0
+            Default: =""
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Height: =44
+            Width: =960
+            ZIndex: =1
+
+        Rectangle1 As rectangle:
+            Fill: =style.colors.neutral._300
+            Height: =1
+            Width: =Parent.Width - (2*Self.X)
+            X: =20
+            Y: =39
+            ZIndex: =2
+
+        Label2_11 As label:
+            Color: =style.colors.neutral._900
+            Font: =style.fonts.family.primary
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =style.fonts.size.l - 1
+            Text: =LookUp(steps, CODE = this_workflow.STEP_CODE, NAME)
+            Width: =132
+            X: =20
+            ZIndex: =3
+
+        Gallery5 As gallery.galleryHorizontal:
+            Height: =30
+            Items: =Filter(TBL_OWNERS, STEP_CODE = this_workflow.STEP_CODE)
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =35
+            Width: =CountRows(Self.AllItems) * Self.TemplateWidth
+            X: =940 - Self.Width
+            Y: =4
+            ZIndex: =4
+
+            Image4 As image:
+                Height: =30
+                Image: =ThisItem.MS_USER.Picture
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Tooltip: =ThisItem.MS_USER.DisplayName
+                Width: =30
+                X: =1
+                ZIndex: =1
+
+    Container5 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =600
+        Width: =960
+        X: =360
+        Y: =133
+        ZIndex: =5
+
+        Image18 As image:
+            Height: =590
+            Image: =shadow_thin
+            Width: =354
+            X: =605
+            Y: =10
+            ZIndex: =1
+
+        Container3 As groupContainer.manualLayoutContainer:
+            Height: =Form1.Height
+            Width: =480
+            X: =67
+            Y: =TextInput3.Y+TextInput3.Height - If(IsEmpty(DataCardValue5.Attachments), 25, -5)
+            ZIndex: =2
+
+            Form1 As form:
+                DataSource: =TBL_LOGS
+                DefaultMode: =FormMode.New
+                Height: =Attachments_DataCard1.Height
+                Width: =480
+                ZIndex: =1
+
+                STEP_CODE_DataCard1 As typedDataCard.numberEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="STEP_CODE"
+                    Default: =ThisItem.STEP_CODE
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@TBL_LOGS],DataSourceInfo.DisplayName,"STEP_CODE")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =0
+                    Required: =false
+                    Update: =this_workflow.STEP_CODE
+                    Width: =160
+                    X: =2
+                    Y: =0
+                    ZIndex: =1
+
+                WORKFLOW_ID_DataCard1 As typedDataCard.numberEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="WORKFLOW_ID"
+                    Default: =ThisItem.WORKFLOW_ID
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@TBL_LOGS],DataSourceInfo.DisplayName,"WORKFLOW_ID")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =0
+                    Required: =false
+                    Update: =this_workflow.ID
+                    Width: =160
+                    X: =0
+                    Y: =0
+                    ZIndex: =9
+
+                Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="{Attachments}"
+                    Default: =ThisItem.Attachments
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@TBL_LOGS],DataSourceInfo.DisplayName,"{Attachments}")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =DataCardValue5.Height
+                    Required: =false
+                    Update: =DataCardValue5.Attachments
+                    Width: =480
+                    X: =0
+                    Y: =1
+                    ZIndex: =9
+
+                    DataCardValue5 As attachments:
+                        BorderColor: =Transparent
+                        BorderThickness: =0
+                        DisabledBorderColor: =Transparent
+                        DisplayMode: =Parent.DisplayMode
+                        DropTargetBackgroundColor: =Transparent
+                        DropTargetBorderColor: =Transparent
+                        DropTargetBorderThickness: =0
+                        Fill: =Transparent
+                        FocusedBorderColor: =Transparent
+                        FocusedBorderThickness: =0
+                        Font: =style.fonts.family.primary
+                        Height: =Max((CountRows(Self.Attachments) * 26) + 35, 60)
+                        HoverBorderColor: =Transparent
+                        HoverColor: =style.colors.success
+                        HoverFill: =Transparent
+                        IsInDataCard: =true
+                        ItemFill: =Transparent
+                        ItemHoverColor: =style.colors.success
+                        ItemHoverFill: =Transparent
+                        Items: =Parent.Default
+                        MaxAttachments: =3
+                        MaxAttachmentSize: =5
+                        PaddingBottom: =5
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PaddingRight: =5
+                        PressedColor: =style.colors.success
+                        PressedFill: =Transparent
+                        Size: =style.fonts.size.xs
+                        Tooltip: =Parent.DisplayName
+                        Width: =480
+                        ZIndex: =2
+
+                AUTHOR_DataCard1 As typedDataCard.comboBoxEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="AUTHOR0"
+                    Default: =ThisItem.AUTHOR
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@TBL_LOGS],DataSourceInfo.DisplayName,"AUTHOR0")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =0
+                    Required: =false
+                    Update: =current_user.ms_user
+                    Width: =160
+                    X: =0
+                    Y: =2
+                    ZIndex: =9
+
+                CONTENT_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="CONTENT"
+                    Default: =ThisItem.CONTENT
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@TBL_LOGS],DataSourceInfo.DisplayName,"CONTENT")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =0
+                    MaxLength: =DataSourceInfo([@TBL_LOGS], DataSourceInfo.MaxLength, "CONTENT")
+                    Required: =false
+                    Update: =TextInput3.Text
+                    Width: =160
+                    X: =1
+                    Y: =2
+                    ZIndex: =9
+
+        Button2_1 As button:
+            BorderColor: =Self.Fill
+            BorderThickness: =1
+            DisabledFill: =style.colors.neutral._400
+            DisplayMode: =If(Not(IsBlank(TextInput3.Text)) Or Not(IsEmpty(DataCardValue5.Attachments)), DisplayMode.Edit, DisplayMode.Disabled)
+            Fill: =style.colors.primary._400
+            FocusedBorderColor: =Self.Fill
+            FocusedBorderThickness: =2
+            Font: =style.fonts.family.primary
+            Height: =30
+            HoverBorderColor: =Self.Fill
+            HoverColor: =Self.Color
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: |-
+                =SubmitForm(Form1);
+                ResetForm(Form1);
+                Reset(TextInput3);
+            PaddingBottom: =6
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =style.fonts.size.s
+            Text: ="Save"
+            Width: =480
+            X: =67
+            Y: =Container3.Height+Container3.Y
+            ZIndex: =3
+
+        Gallery8 As gallery.variableTemplateHeightGallery:
+            Height: =351
+            Items: |-
+                =Sort(
+                    Filter(
+                        TBL_LOGS,
+                        WORKFLOW_ID = this_workflow.ID,
+                        STEP_CODE = this_workflow.STEP_CODE Or selected_tag_id = Blank()
+                    ),
+                    Created, Descending
+                )
+            Layout: =Layout.Vertical
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =280
+            Width: =480
+            X: =67
+            Y: =229
+            ZIndex: =4
+
+            Image4_1 As image:
+                Height: =30
+                Image: =ThisItem.AUTHOR.Picture
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =30
+                X: =21
+                Y: =18
+                ZIndex: =1
+
+            TextInput3_1 As text:
+                BorderColor: |-
+                    =If(
+                        Self.DisplayMode = DisplayMode.Edit,
+                        style.colors.neutral._400,
+                        style.colors.neutral._000
+                    )
+                BorderThickness: =1
+                Default: =""
+                DisabledBorderColor: =style.colors.neutral._400
+                DisabledColor: =style.colors.neutral._700
+                DisabledFill: =style.colors.neutral._200
+                DisplayMode: =DisplayMode.Disabled
+                FocusedBorderThickness: =1
+                Font: =style.fonts.family.primary
+                Height: =Label3.Y + Label3.Height - Self.Y
+                HoverBorderColor: =style.colors.neutral._600
+                HoverColor: =style.colors.neutral._999
+                HoverFill: =style.colors.neutral._000
+                MaxLength: =500
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =style.colors.neutral._800
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =style.fonts.size.m 
+                Width: =407
+                X: =66
+                Y: =18
+                ZIndex: =2
+
+            Label3 As label:
+                AutoHeight: =true
+                Font: =style.fonts.family.primary
+                FontWeight: =FontWeight.Lighter
+                Height: =20
+                Italic: =IsBlank(ThisItem.CONTENT)
+                OnSelect: =Select(Parent)
+                PaddingBottom: =7
+                Size: =style.fonts.size.m-2
+                Text: =Coalesce(ThisItem.CONTENT, "This message was sent without content")
+                Width: =390
+                X: =73
+                Y: =20
+                ZIndex: =3
+
+            Gallery7 As gallery.galleryVertical:
+                Height: =CountRows(ThisItem.Attachments)*30 + 10
+                Items: =ThisItem.Attachments
+                Layout: =Layout.Vertical
+                OnSelect: =Launch(ThisItem.AbsoluteUri)
+                TemplatePadding: =0
+                TemplateSize: =30
+                Width: =408
+                X: =66
+                Y: =TextInput3_1.Y + TextInput3_1.Height + 10
+                ZIndex: =4
+
+                Image3 As image:
+                    Height: =18
+                    Image: |-
+                        =Switch(
+                            Left(Lower(Last(Split(ThisItem.DisplayName, ".")).Result), 3),
+                            "xls",
+                            excel,
+                            "csv",
+                            excel,
+                            "doc",
+                            word,
+                            "ppt",
+                            powerpoint,
+                            "svg",
+                            image,
+                            "png",
+                            image,
+                            "jpg",
+                            image,
+                            "jpe",
+                            image,
+                            "pdf",
+                            pdf,
+                            generic
+                        )
+                    OnSelect: =Select(Parent)
+                    Width: =18
+                    X: =16
+                    Y: =6
+                    ZIndex: =2
+
+                Label3_1 As label:
+                    Font: =style.fonts.family.primary
+                    FontWeight: =FontWeight.Lighter
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =7
+                    PaddingLeft: =10
+                    Size: =style.fonts.size.s
+                    Text: =ThisItem.DisplayName
+                    Width: =359
+                    X: =34
+                    ZIndex: =3
+
+                Button4_3 As button:
+                    Color: =Transparent
+                    DisabledColor: =Transparent
+                    DisabledFill: =Transparent
+                    Fill: =Transparent
+                    Height: =Parent.TemplateHeight - 8
+                    HoverColor: =Transparent
+                    HoverFill: =RGBA(0, 0, 0, 0.05)
+                    OnSelect: =Select(Parent)
+                    PressedColor: =Transparent
+                    PressedFill: =Transparent
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Text: ="Button"
+                    Tooltip: ="Open file"
+                    Width: =Parent.Width - 16
+                    X: =8
+                    Y: =4
+                    ZIndex: =4
+
+            Label3_2 As label:
+                Align: =Align.Right
+                Color: =style.colors.neutral._700
+                Font: =style.fonts.family.primary
+                FontWeight: =FontWeight.Semibold
+                Height: =18
+                OnSelect: =Select(Parent)
+                PaddingTop: =3
+                Size: =style.fonts.size.xs-1
+                Text: |-
+                    =Text(ThisItem.Created, "d mmmm yyyy at HH:mm")
+                Width: =247
+                X: =216
+                ZIndex: =5
+
+            Label2_176 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =style.colors.neutral._999
+                Font: =Font.'Segoe UI'
+                Height: =18
+                OnSelect: =Select(Parent)
+                PaddingBottom: =1
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =style.fonts.size.xs
+                Text: =Last(Split(ThisItem.AUTHOR.DisplayName, " ")).Result & " " & Left(ThisItem.AUTHOR.DisplayName, 1) & "."
+                Width: =71
+                Wrap: =false
+                Y: =49
+                ZIndex: =6
+
+        Gallery1 As gallery.galleryVertical:
+            BorderColor: =style.colors.neutral._300
+            Fill: =Transparent
+            Height: =472
+            Items: =Filter(check_templates, STEP_CODE = this_workflow.STEP_CODE)
+            Layout: =Layout.Vertical
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =38
+            Width: =290
+            X: =638
+            Y: =62
+            ZIndex: =5
+
+            Checkbox1 As checkbox:
+                CheckboxBorderColor: =RGBA(0, 0, 0, 1)
+                CheckboxSize: =22
+                CheckmarkFill: =style.colors.primary._300
+                FocusedBorderThickness: =0
+                Height: =35
+                OnCheck: |-
+                    =Patch(
+                        TBL_CHECKS,
+                        Defaults(TBL_CHECKS),
+                        {
+                            STEP_CODE: this_workflow.STEP_CODE,
+                            WORKFLOW_ID: this_workflow.ID,
+                            TEMPLATE_ID: ThisItem.ID,
+                            VALUE: Self.Value
+                        }
+                    )
+                OnSelect: =Select(Parent)
+                OnUncheck: =Remove(TBL_CHECKS, LookUp(TBL_CHECKS, TEMPLATE_ID = ThisItem.ID And WORKFLOW_ID = this_workflow.ID))
+                Size: =style.fonts.size.s
+                Text: =ThisItem.CAPTION
+                X: =12
+                ZIndex: =1
+
+        Button2_2 As button:
+            BorderColor: =Self.Fill
+            Fill: =style.colors.primary._400
+            FocusedBorderColor: =Self.Fill
+            FocusedBorderThickness: =2
+            Font: =style.fonts.family.primary
+            Height: =30
+            HoverBorderColor: =Self.Fill
+            HoverColor: =Self.Color
+            HoverFill: =ColorFade(Self.Fill, -20%)
+            OnSelect: |-
+                =Set(this_workflow, Patch(TBL_WORKFLOWS, this_workflow, {STEP_CODE:  this_workflow.STEP_CODE + 1}))
+            PaddingBottom: =6
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =style.fonts.size.s
+            Text: ="Send to next step"
+            Width: =280
+            X: =642
+            Y: =542
+            ZIndex: =6
+
+        TextInput3 As text:
+            BorderColor: |-
+                =If(
+                    Self.DisplayMode = DisplayMode.Edit,
+                    ColorFade(style.colors.m_u, -10%),
+                    style.colors.neutral._000
+                )
+            BorderThickness: =1
+            Default: =""
+            DisabledBorderColor: =style.colors.neutral._700
+            DisabledColor: =style.colors.neutral._700
+            Fill: =style.colors.m_u
+            FocusedBorderThickness: =1
+            Font: =style.fonts.family.primary
+            Height: =84
+            HintText: ="Type a comment or save a file..."
+            HoverBorderColor: =ColorFade(style.colors.m_u, -30%)
+            HoverColor: =style.colors.neutral._999
+            HoverFill: =ColorFade(style.colors.m_u, 20%)
+            LineHeight: =1.3
+            MaxLength: =500
+            Mode: =TextMode.MultiLine
+            PaddingRight: =12
+            PressedBorderColor: =style.colors.neutral._800
+            Size: =style.fonts.size.m - 1
+            Width: =480
+            X: =67
+            Y: =32
+            ZIndex: =7
+
+        Image6 As image:
+            Height: =20
+            Image: =question_mark
+            Width: =21
+            X: =645
+            Y: =31
+            ZIndex: =8
+
+        Label2_12 As label:
+            Color: =style.colors.neutral._900
+            Font: =style.fonts.family.primary
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            Size: =style.fonts.size.m
+            Text: ="Done everything?"
+            Width: =250
+            X: =673
+            Y: =28
+            ZIndex: =9
+
+        Rectangle1_1 As rectangle:
+            Fill: =style.colors.neutral._300
+            Height: =1
+            Width: =275
+            X: =645
+            Y: =60
+            ZIndex: =10
+
+        tag_button_1 As tag_button:
+            OnClick: |-
+                =UpdateContext(
+                    {
+                        selected_tag: Self.TagValue, 
+                        selected_tag_id: Self.OutputID
+                    }
+                );
+            Selected: =IsBlank(selected_tag_id)
+            Tag: ="ALL"
+            TagID: =Blank()
+            Width: |+
+                =If(Self.Visible, Sum(AddColumns(Split(Self.TagValue, ""), "Size", LookUp(colCharsWidth, CharFont="'Segoe UI', 'Open Sans', sans-serif" && CharWeight=FontWeight.Normal && Char = Result).Size), Size) * 8+30,0)
+                
+            X: =67
+            Y: =194
+            ZIndex: =11
+
+        tag_button_2 As tag_button:
+            OnClick: |-
+                =UpdateContext(
+                    {
+                        selected_tag: If(selected_tag_id = Self.OutputID, Blank(), Self.TagValue), 
+                        selected_tag_id: If(selected_tag_id = Self.OutputID, Blank(), Self.OutputID)
+                    }
+                );
+            Selected: =Self.OutputID = selected_tag_id
+            Tag: ="THIS STEP"
+            TagID: =this_workflow.STEP_CODE
+            Width: |+
+                =If(Self.Visible, Sum(AddColumns(Split(Self.TagValue, ""), "Size", LookUp(colCharsWidth, CharFont="'Segoe UI', 'Open Sans', sans-serif" && CharWeight=FontWeight.Normal && Char = Result).Size), Size) * 8+30,0)
+                
+            X: =117
+            Y: =194
+            ZIndex: =12
+

@@ -1,0 +1,145 @@
+sc_users As screen:
+    Fill: =ColorFade(style.colors.m_u, 20%)
+
+    Container1_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =App.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =App.Width
+        ZIndex: =1
+
+        left_sidebar_5 As left_sidebar:
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+
+        Container2 As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =2
+
+            Gallery3 As gallery.variableTemplateHeightGallery:
+                Fill: =RGBA(255, 255, 255, 1)
+                Items: =Search(steps, TextInput1.Text,"NAME")
+                Layout: =Layout.Vertical
+                TemplateSize: =280
+                Width: =761
+                X: =143
+                Y: =140
+                ZIndex: =1
+
+                Gallery4 As gallery.galleryVertical:
+                    Height: =CountRows(Self.AllItems) * Self.TemplateHeight + 0
+                    Items: =Sort(Filter(TBL_OWNERS, STEP_CODE = ThisItem.ID), USER_NAME)
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =38
+                    Width: =683
+                    X: =26
+                    Y: =49
+                    ZIndex: =2
+
+                    Image2 As image:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Height: =30
+                        Image: =ThisItem.MS_USER.Picture
+                        OnSelect: =Select(Parent)
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Width: =30
+                        ZIndex: =1
+
+                    Label1_1 As label:
+                        Font: =Font.'Segoe UI'
+                        Height: =30
+                        OnSelect: =Select(Parent)
+                        PaddingLeft: =15
+                        Size: =12
+                        Text: =ThisItem.MS_USER.DisplayName
+                        Width: =354
+                        X: =30
+                        ZIndex: =2
+
+                    Icon1_1 As icon.Add:
+                        Color: =RGBA(0, 0, 0, 1)
+                        FocusedBorderThickness: =0
+                        Height: =24
+                        HoverBorderColor: =ColorFade(Self.Color, 20%)
+                        Icon: =Icon.Cancel
+                        OnSelect: =Select(Parent)
+                        Width: =24
+                        X: =648
+                        Y: =6
+                        ZIndex: =3
+
+                TextInput5 As text:
+                    BorderThickness: =0
+                    Default: =ThisItem.NAME
+                    DisabledColor: =style.colors.neutral._000
+                    DisabledFill: =style.colors.primary._400
+                    DisplayMode: =DisplayMode.Disabled
+                    FontWeight: =FontWeight.Semibold
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    Size: =style.fonts.size.m
+                    Width: =713
+                    X: =12
+                    Y: =5
+                    ZIndex: =3
+
+                ComboBox1 As combobox:
+                    BorderColor: =ColorFade(style.colors.m_u, -10%)
+                    BorderThickness: =1
+                    ChevronBackground: =RGBA(0, 0, 0, 0)
+                    ChevronFill: =style.colors.primary._400
+                    ChevronHoverBackground: =Transparent
+                    ChevronHoverFill: =style.colors.primary._300
+                    DisplayFields: =["DisplayName"]
+                    Fill: =style.colors.m_u
+                    FocusedBorderThickness: =1
+                    Height: =32
+                    HoverFill: =ColorFade(style.colors.m_u, -10%)
+                    InputTextPlaceholder: ="Search user to add..."
+                    Items: =Choices(TBL_OWNERS[@MS_USER])
+                    NoSelectionText: ="Search user to add..."
+                    OnSelect: =Select(Parent)
+                    PressedColor: =Transparent
+                    PressedFill: =Transparent
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices(TBL_OWNERS.MS_USER,ComboBox1.SearchText)
+                    SelectionColor: =Black
+                    SelectionFill: =ColorFade(style.colors.m_u, -5%)
+                    SelectMultiple: =false
+                    Size: =style.fonts.size.s
+                    Width: =602
+                    X: =26
+                    Y: =Gallery4.Y + Gallery4.Height
+                    ZIndex: =4
+
+            TextInput1 As text:
+                BorderColor: =ColorFade(style.colors.m_u, -10%)
+                BorderThickness: =1
+                Clear: =true
+                Color: =style.colors.neutral._999
+                Default: =""
+                DisabledBorderColor: =style.colors.neutral._700
+                DisabledColor: =style.colors.neutral._700
+                Fill: =style.colors.neutral._000
+                FocusedBorderColor: =style.colors.neutral._900
+                FocusedBorderThickness: =2
+                Font: =style.fonts.family.primary
+                Height: =32
+                HoverBorderColor: =ColorFade(style.colors.m_u, -10%)
+                HoverColor: =style.colors.neutral._999
+                HoverFill: =style.colors.neutral._100
+                PressedBorderColor: =ColorFade(style.colors.m_u, -20%)
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =style.fonts.size.s
+                X: =143
+                Y: =88
+                ZIndex: =2
+

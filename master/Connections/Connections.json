@@ -1,0 +1,50 @@
+{
+  "c37dafd2-372c-45aa-994e-bd5619f3e2e8": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610-greyhound-localization-RelayFix/1.0.1610.3091/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://tonindavide.sharepoint.com/sites/new-equipment-workflow": {
+        "dataSources": {
+          "TBL_CHECK_TEMPLATES": {
+            "tableName": "9a9a2314-d175-4e0c-9d24-d9a1916b6e7c"
+          },
+          "TBL_CHECKS": {
+            "tableName": "eeaf00b1-f3ba-4f68-8ff7-b2ba191573fe"
+          },
+          "TBL_LOGS": {
+            "tableName": "9c472418-a7a2-48cc-a403-424715c709e5"
+          },
+          "TBL_OWNERS": {
+            "tableName": "9cd05eea-c400-4f63-acd3-4ec75c12c894"
+          },
+          "TBL_STEPS": {
+            "tableName": "bd4e5fbf-6a11-4d62-b5bc-fe223a283d64"
+          },
+          "TBL_WORKFLOWS": {
+            "tableName": "e7108e29-59e4-4353-8d80-25c0d7b01831"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "TBL_OWNERS",
+      "TBL_STEPS",
+      "TBL_WORKFLOWS",
+      "TBL_LOGS",
+      "TBL_CHECK_TEMPLATES",
+      "TBL_CHECKS"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c37dafd2-372c-45aa-994e-bd5619f3e2e8"
+  }
+}
