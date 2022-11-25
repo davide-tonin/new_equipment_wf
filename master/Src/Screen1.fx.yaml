@@ -18,3 +18,7 @@ Screen1 As screen:
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
+            Button1 As button:
+                Text: ="Button"
+                ZIndex: =1
+
