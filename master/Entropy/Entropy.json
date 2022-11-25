@@ -157,7 +157,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/25/2022 14:37:06",
+  "HeaderLastSavedDateTimeUTC": "11/25/2022 14:39:47",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "c37dafd2-372c-45aa-994e-bd5619f3e2e8": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-520746bf-193c-484f-99f1-d93d-6f1177ca\""
@@ -245,7 +245,7 @@
   },
   "PublishOrderIndices": {
     "App": 0,
-    "Attachments_DataCard1": 44,
+    "Attachments_DataCard1": 45,
     "AUTHOR_DataCard1": 47,
     "btn_select_button": 110,
     "btn_select_item": 101,
@@ -275,7 +275,7 @@
     "Container5": 32,
     "Container5_1": 67,
     "CONTENT_DataCard1": 48,
-    "DataCardValue5": 45,
+    "DataCardValue5": 46,
     "Form1": 42,
     "Gallery1": 38,
     "Gallery2": 14,
@@ -360,7 +360,7 @@
     "Screen3": 0,
     "Screen4": 0,
     "sh_indicator": 106,
-    "STEP_CODE_DataCard1": 46,
+    "STEP_CODE_DataCard1": 44,
     "tag_button": 0,
     "tag_button_1": 50,
     "tag_button_2": 51,
