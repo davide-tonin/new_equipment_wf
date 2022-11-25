@@ -245,3 +245,11 @@ new_workflow_popup As CanvasComponent:
         Y: =293
         ZIndex: =10
 
+    ComboBox2 As combobox:
+        Items: =ComboBoxSample
+        SearchItems: =Search(ComboBoxSample,ComboBox2.SearchText,"Value1")
+        Width: =375
+        X: =495
+        Y: =465
+        ZIndex: =11
+
