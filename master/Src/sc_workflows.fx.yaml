@@ -139,12 +139,13 @@ sc_workflows As screen:
         Label2_7 As label:
             Color: =style.colors.neutral._900
             Font: =style.fonts.family.primary
-            Height: =Parent.TemplateHeight
+            Height: =20
             OnSelect: =Select(Parent)
             Size: =style.fonts.size.s
             Text: =ThisItem.STEP_CODE
             Width: =57
             X: =445
+            Y: =15
             ZIndex: =3
 
         Label2_8 As label:
@@ -170,12 +171,51 @@ sc_workflows As screen:
             ZIndex: =5
 
         Gallery6 As gallery.galleryHorizontal:
-            Height: =35
-            Items: =CustomGallerySample
-            TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-            Width: =90
-            X: =355
+            Height: =8
+            Items: =steps
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =15
+            Width: =220
+            X: =253
+            Y: =35
             ZIndex: =6
+
+            TextInput9_19 As text:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderThickness: =1
+                Default: =
+                DisabledBorderColor: |-
+                    =With(
+                        {
+                            current_step:   Value(Label2_7.Text)
+                        },
+                        If(
+                            current_step >=  ThisItem.INDEX, 
+                            style.colors.primary._200,
+                            style.colors.neutral._400
+                        )
+                    )
+                DisabledFill: |-
+                    =With(
+                        {
+                            current_step:   Value(Label2_7.Text)
+                        },
+                        If(
+                            current_step >  ThisItem.INDEX, 
+                            style.colors.primary._200,
+                            style.colors.neutral._400
+                        )
+                    )
+                DisplayMode: =DisplayMode.Disabled
+                Height: =3
+                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
+                Size: =10
+                Width: =12
+                X: =1
+                Y: =3
+                ZIndex: =1
 
     Button2 As button:
         BorderColor: =Self.Fill
