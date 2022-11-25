@@ -48,7 +48,7 @@ sc_workflows As screen:
         Font: =style.fonts.family.primary
         FontWeight: =FontWeight.Bold
         Size: =style.fonts.size.xxl
-        Text: ="All workflows"
+        Text: ="All workflows dasfsdfdsdfds"
         Width: =800
         X: =360
         Y: =29
