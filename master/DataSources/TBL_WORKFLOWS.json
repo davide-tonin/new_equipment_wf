@@ -36,7 +36,8 @@
       "Modified": "Modified",
       "NAME": "NAME",
       "STEP_CODE": "STEP_CODE",
-      "Title": "Title"
+      "Title": "Title",
+      "TYPE_CODE": "TYPE_CODE"
     },
     "DatasetName": "https://tonindavide.sharepoint.com/sites/new-equipment-workflow",
     "EncodeDataset": true,

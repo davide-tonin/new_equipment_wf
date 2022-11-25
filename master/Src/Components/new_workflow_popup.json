@@ -1215,7 +1215,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "278",
+            "InvariantScript": "384",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -3423,7 +3423,7 @@
             "Rules": [
               {
                 "Category": "Data",
-                "InvariantScript": "\"Cancel65456\"",
+                "InvariantScript": "\"Cancel\"",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -4185,7 +4185,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "446",
+            "InvariantScript": "552",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -4327,7 +4327,7 @@
       },
       "OnConfirm"
     ],
-    "LastModifiedTimestamp": "638049864015538590",
+    "LastModifiedTimestamp": "638049879477345935",
     "Name": "new_workflow_popup",
     "Rules": [
       {
@@ -4462,7 +4462,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638049864015538590",
+  "LastModifiedTimestamp": "638049879477345935",
   "Name": "51cf71084b754e7babfd2081a2f9a8e8",
   "OverridableProperties": {},
   "TemplateOriginalName": "342115926bd04ec4a58273b6d172bb07",

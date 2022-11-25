@@ -207,6 +207,271 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 55,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Filter(TBL_OWNERS, STEP_CODE = this_workflow.STEP_CODE)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrTypeError",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".MS_USER"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".Picture"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".MS_USER"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container4.Gallery5.Image4.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container4.Gallery5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Items"
                 }
               ],
@@ -279,6 +544,120 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 60,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Filter(check_templates, STEP_CODE = this_workflow.STEP_CODE)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrTypeError",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".CAPTION"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -368,6 +747,83 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 8,
+                  "charOffset": 165,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnCheck",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnCheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnCheck",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 173,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnCheck",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnCheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnCheck",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 214,
                   "charOffset": 0,
                   "snippet": {
@@ -392,7 +848,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -434,7 +890,125 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError-Arg-Expected-Found",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnUncheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnUncheck",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 52,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnUncheck",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnUncheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnUncheck",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 60,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnUncheck",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnUncheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery1.Checkbox1.OnUncheck",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 50,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnUncheck",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery1.Checkbox1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -786,6 +1360,1281 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 188,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Sort(\r\n    Filter(\r\n        TBL_LOGS,\r\n        WORKFLOW_ID = this_workflow.ID,\r\n        STEP_CODE = this_workflow.STEP_CODE Or selected_tag_id = Blank()\r\n    ),\r\n    Created, Descending\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrTypeError",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3_2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 5,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3_2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".Created"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3_2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 46,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Text(ThisItem.Created, \"d mmmm yyyy at HH:mm\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Image4_1.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Image4_1.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Image4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Image4_1.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Image4_1.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".AUTHOR"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Image4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Image4_1.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Image4_1.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 15,
+                  "snippet": {
+                    "text": ".Picture"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Image4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 17,
+                  "snippet": {
+                    "text": ".CONTENT"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 67,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Coalesce(ThisItem.CONTENT, \"This message was sent without content\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Coalesce"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Italic"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Italic",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Italic",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Italic"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Italic",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".CONTENT"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Italic",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Italic"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label3.Italic",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "IsBlank(ThisItem.CONTENT)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Italic",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "IsBlank"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 19,
+                  "snippet": {
+                    "text": ".AUTHOR"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 39,
+                  "charOffset": 5,
+                  "snippet": {
+                    "text": "Split(ThisItem.AUTHOR.DisplayName, \" \")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Split"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 66,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 74,
+                  "snippet": {
+                    "text": ".AUTHOR"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 81,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Label2_176.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 36,
+                  "charOffset": 61,
+                  "snippet": {
+                    "text": "Left(ThisItem.AUTHOR.DisplayName, 1)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Label2_176"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Left"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Attachments"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Height",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 10,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Height",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": ".Attachments"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Height",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 31,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(ThisItem.Attachments)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.galleryTemplate9.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.galleryTemplate9.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.galleryTemplate9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.galleryTemplate9.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.galleryTemplate9.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 15,
+                  "snippet": {
+                    "text": ".AbsoluteUri"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.galleryTemplate9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Label3_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Label3_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.Label3_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Label3_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Label3_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.Label3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 35,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 32,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": "Split(ThisItem.DisplayName, \".\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "sc_see_workflow",
+                "type": "sc_see_workflow.Container5.Gallery8.Gallery7.Image3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Split"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "sc_see_workflow.Container5.Button2_2.OnSelect"
                 }
               ],
@@ -856,7 +2705,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -897,7 +2746,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
-          "ruleIndex": 4
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -934,7 +2783,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 5
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -971,7 +2820,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 5
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -1001,7 +2850,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1031,7 +2880,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1061,7 +2910,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1091,7 +2940,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1121,7 +2970,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1151,7 +3000,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -1181,7 +3030,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1211,7 +3060,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1241,7 +3090,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1271,7 +3120,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1301,7 +3150,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1331,7 +3180,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1361,7 +3210,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1391,7 +3240,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -1421,7 +3270,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1450,7 +3299,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1479,7 +3328,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1508,7 +3357,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1538,7 +3387,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1568,7 +3417,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1598,7 +3447,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1628,7 +3477,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1658,7 +3507,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1688,7 +3537,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1718,7 +3567,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1748,7 +3597,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1778,7 +3627,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1808,7 +3657,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -1838,7 +3687,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1868,7 +3717,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -1898,7 +3747,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1928,7 +3777,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -1958,7 +3807,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -1988,7 +3837,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2018,7 +3867,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2048,7 +3897,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2078,7 +3927,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2108,7 +3957,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2138,7 +3987,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2168,7 +4017,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2198,7 +4047,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2228,7 +4077,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2258,7 +4107,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -2288,7 +4137,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2318,7 +4167,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2348,7 +4197,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2378,7 +4227,67 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_workflows.Gallery2.Gallery6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_workflows.Gallery2.Gallery6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "sc_workflows",
+                "type": "sc_workflows.Gallery2.Gallery6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sc_workflows.Gallery2.Gallery6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "sc_workflows.Gallery2.Gallery6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "sc_workflows",
+                "type": "sc_workflows.Gallery2.Gallery6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2408,7 +4317,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -2438,7 +4347,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -2468,7 +4377,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -2498,7 +4407,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -2528,7 +4437,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
+          "ruleIndex": 12
         }
       ],
       "tool": {
@@ -2562,6 +4471,40 @@
                 "howToFix": [
                   "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
                   "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrTypeError",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible type. We can't evaluate your formula because of a type error."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Check the types of the values involved in the formula and ensure the types match."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
