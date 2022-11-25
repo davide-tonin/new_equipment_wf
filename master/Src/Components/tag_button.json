@@ -213,7 +213,7 @@
         "Name": "Button2_7",
         "Parent": "tag_button",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 127,
+        "PublishOrderIndex": 40,
         "Rules": [
           {
             "Category": "Data",
@@ -711,7 +711,7 @@
         "Name": "TextInput3_6",
         "Parent": "tag_button",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 128,
+        "PublishOrderIndex": 41,
         "Rules": [
           {
             "Category": "Data",

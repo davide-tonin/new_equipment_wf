@@ -153,7 +153,7 @@
                     "Name": "txt_user_background",
                     "Parent": "cnt_inner_user_box",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 95,
+                    "PublishOrderIndex": 7,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -503,7 +503,7 @@
                     "Name": "img_user",
                     "Parent": "cnt_inner_user_box",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 96,
+                    "PublishOrderIndex": 8,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -817,7 +817,7 @@
                     "Name": "lbl_user_title",
                     "Parent": "cnt_inner_user_box",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 97,
+                    "PublishOrderIndex": 9,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1197,7 +1197,7 @@
                     "Name": "lbl_user_subtitle",
                     "Parent": "cnt_inner_user_box",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 98,
+                    "PublishOrderIndex": 10,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -1573,7 +1573,7 @@
                 "Name": "cnt_inner_user_box",
                 "Parent": "cnt_user_box",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 94,
+                "PublishOrderIndex": 6,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1812,7 +1812,7 @@
             "Name": "cnt_user_box",
             "Parent": "cnt_sidebar",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 93,
+            "PublishOrderIndex": 3,
             "Rules": [
               {
                 "Category": "Design",
@@ -1961,7 +1961,7 @@
                 "Name": "galleryTemplate2",
                 "Parent": "gl_groups",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 100,
+                "PublishOrderIndex": 11,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2114,7 +2114,7 @@
                 "Name": "lbl_group_caption",
                 "Parent": "gl_groups",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 101,
+                "PublishOrderIndex": 12,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2403,7 +2403,7 @@
                     "Name": "galleryTemplate3",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 103,
+                    "PublishOrderIndex": 14,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -2569,7 +2569,7 @@
                     "Name": "lbl_item_caption",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 104,
+                    "PublishOrderIndex": 15,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -2980,7 +2980,7 @@
                     "Name": "btn_select_item",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 105,
+                    "PublishOrderIndex": 16,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -3311,7 +3311,7 @@
                     "Name": "html_background_sidebar",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 106,
+                    "PublishOrderIndex": 17,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -3618,7 +3618,7 @@
                     "Name": "txt_item_background",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 107,
+                    "PublishOrderIndex": 18,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -3962,7 +3962,7 @@
                     "Name": "icon_item",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 108,
+                    "PublishOrderIndex": 19,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -4208,7 +4208,7 @@
                     "Name": "img_launch",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 109,
+                    "PublishOrderIndex": 20,
                     "Rules": [
                       {
                         "Category": "Data",
@@ -4489,7 +4489,7 @@
                     "Name": "sh_indicator",
                     "Parent": "gl_items",
                     "PersistMetaDataIDKey": false,
-                    "PublishOrderIndex": 110,
+                    "PublishOrderIndex": 21,
                     "Rules": [
                       {
                         "Category": "Design",
@@ -4687,7 +4687,7 @@
                 "Name": "gl_items",
                 "Parent": "gl_groups",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 102,
+                "PublishOrderIndex": 13,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -4960,7 +4960,7 @@
             "Name": "gl_groups",
             "Parent": "cnt_sidebar",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 99,
+            "PublishOrderIndex": 4,
             "Rules": [
               {
                 "Category": "Data",
@@ -5242,7 +5242,7 @@
                 "Name": "img_logo",
                 "Parent": "cnt_footer",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 112,
+                "PublishOrderIndex": 22,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -5553,7 +5553,7 @@
             "Name": "cnt_footer",
             "Parent": "cnt_sidebar",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 111,
+            "PublishOrderIndex": 5,
             "Rules": [
               {
                 "Category": "Design",
@@ -5728,7 +5728,7 @@
         "Name": "cnt_sidebar",
         "Parent": "left_sidebar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 92,
+        "PublishOrderIndex": 2,
         "Rules": [
           {
             "Category": "Design",

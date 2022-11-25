@@ -52,7 +52,7 @@
         "Name": "Rectangle2",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 113,
+        "PublishOrderIndex": 24,
         "Rules": [
           {
             "Category": "Design",
@@ -378,7 +378,7 @@
         "Name": "TextInput3_3",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 114,
+        "PublishOrderIndex": 25,
         "Rules": [
           {
             "Category": "Data",
@@ -704,7 +704,7 @@
         "Name": "HtmlText1",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 115,
+        "PublishOrderIndex": 26,
         "Rules": [
           {
             "Category": "Data",
@@ -1073,7 +1073,7 @@
         "Name": "Button2_3",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 116,
+        "PublishOrderIndex": 27,
         "Rules": [
           {
             "Category": "Data",
@@ -1413,7 +1413,7 @@
         "Name": "Label2_13",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 117,
+        "PublishOrderIndex": 28,
         "Rules": [
           {
             "Category": "Data",
@@ -1896,7 +1896,7 @@
         "Name": "TextInput3_5",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 118,
+        "PublishOrderIndex": 29,
         "Rules": [
           {
             "Category": "Data",
@@ -2402,7 +2402,7 @@
         "Name": "TextInput3_4",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 119,
+        "PublishOrderIndex": 30,
         "Rules": [
           {
             "Category": "Data",
@@ -2772,7 +2772,7 @@
             "Name": "TextInput4_2",
             "Parent": "Container4_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 121,
+            "PublishOrderIndex": 32,
             "Rules": [
               {
                 "Category": "Data",
@@ -3087,7 +3087,7 @@
             "Name": "Rectangle1_4",
             "Parent": "Container4_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 122,
+            "PublishOrderIndex": 33,
             "Rules": [
               {
                 "Category": "Design",
@@ -3419,7 +3419,7 @@
             "Name": "Button2_6",
             "Parent": "Container4_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 123,
+            "PublishOrderIndex": 34,
             "Rules": [
               {
                 "Category": "Data",
@@ -3876,7 +3876,7 @@
             "Name": "Button2_5",
             "Parent": "Container4_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 124,
+            "PublishOrderIndex": 35,
             "Rules": [
               {
                 "Category": "Data",
@@ -4157,7 +4157,7 @@
         "Name": "Container4_2",
         "Parent": "new_workflow_popup",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 120,
+        "PublishOrderIndex": 31,
         "Rules": [
           {
             "Category": "Design",
