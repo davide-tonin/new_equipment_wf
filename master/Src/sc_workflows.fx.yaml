@@ -48,7 +48,7 @@ sc_workflows As screen:
         Font: =style.fonts.family.primary
         FontWeight: =FontWeight.Bold
         Size: =style.fonts.size.xxl
-        Text: ="All workflows dasfsdfdsdfds"
+        Text: ="All workflows"
         Width: =800
         X: =360
         Y: =29
@@ -132,7 +132,7 @@ sc_workflows As screen:
             OnSelect: =Select(Parent)
             Size: =style.fonts.size.s
             Text: =ThisItem.NAME
-            Width: =315
+            Width: =212
             X: =54
             ZIndex: =2
 
@@ -143,8 +143,8 @@ sc_workflows As screen:
             OnSelect: =Select(Parent)
             Size: =style.fonts.size.s
             Text: =ThisItem.STEP_CODE
-            Width: =137
-            X: =365
+            Width: =57
+            X: =445
             ZIndex: =3
 
         Label2_8 As label:
@@ -168,6 +168,14 @@ sc_workflows As screen:
             X: =927
             Y: =15
             ZIndex: =5
+
+        Gallery6 As gallery.galleryHorizontal:
+            Height: =35
+            Items: =CustomGallerySample
+            TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+            Width: =90
+            X: =355
+            ZIndex: =6
 
     Button2 As button:
         BorderColor: =Self.Fill
