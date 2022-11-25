@@ -27,6 +27,7 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "CELL_CODE": "CELL_CODE",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "DESCRIPTION": "DESCRIPTION",
@@ -35,8 +36,10 @@
       "ID": "ID",
       "Modified": "Modified",
       "NAME": "NAME",
+      "PLANT_CODE": "PLANT_CODE",
       "STEP_CODE": "STEP_CODE",
-      "Title": "Title"
+      "Title": "Title",
+      "TYPE_CODE": "TYPE_CODE"
     },
     "DatasetName": "https://tonindavide.sharepoint.com/sites/new-equipment-workflow",
     "EncodeDataset": true,
