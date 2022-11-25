@@ -18,12 +18,3 @@ Screen1 As screen:
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            Button1 As button:
-                Text: ="3r23r213r"
-                ZIndex: =1
-
-            Form2 As form:
-                LayoutMinHeight: =250
-                LayoutMinWidth: =400
-                ZIndex: =2
-
