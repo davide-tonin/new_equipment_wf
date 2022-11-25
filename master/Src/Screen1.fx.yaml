@@ -19,7 +19,7 @@ Screen1 As screen:
             ZIndex: =2
 
             Button1 As button:
-                Text: ="3r23r213r"
+                Text: ="3r23r213r rwe"
                 ZIndex: =1
 
             Form2 As form:
